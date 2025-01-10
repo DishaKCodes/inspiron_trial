@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+  }
+  @font-palette-values --Mint {
+    font-family: Rocher;
+    base-palette: 7;
+  }
+  
+  .container-2{
+    display: none;
+  }
+  
+  .mint {
+    font-palette: --Mint;
+    font-family: 'Rocher';
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0px;
+    padding-top: 50px;
+  }
+  .App {
+    text-align: center;
+  }
+  
+  /* css for glass morphism: */
+  .glass-card-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .glass-card {
+    /* position: relative; */
+    /* overflow: hidden; */
+    width: 250px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 8px 8px rgba(155, 242, 255, 0.916);
+    background-color: rgba(255, 255, 255, 0.187);
+    padding: 2vh;
+  }
+  
+  @media screen and (max-width:950px){
+    .glass-card{
+      width: 200px;
+    }
+  }
+  
+  @media screen and (max-width:750px){
+    .glass-card{
+      width: 175px;
+    }
+  }
+  
+  @media screen and (max-width:600px){
+    .glass-card{
+      width: 250px;
+    }
+    .container-2{
+      display: block;
+    }
+    .container{
+      display: none;
+    }
+  }
+  
+  /* .glass-card:hover {
+    transform: scale(1.1);
+  } */
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .card-caption {
+    /* position: absolute; */
+    bottom: 0;
+    text-align: center;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: #a2f5f5;
+    text-shadow: " #6977d3 0px 0px 5px, #6977d3 0px 0px 10px, #6977d3 0px 0px 20px, #6977d3 0px 0px 40px, #da1c5c 0px 0px 60px",
+  }
+  
+  #first{
+    box-shadow: 0px 12px 12px rgb(255 203 5);
+  }
+  
+  #second{
+    box-shadow: 0px 12px 12px rgb(176, 175, 170);
+  }
+  
+  #third{
+    box-shadow: 0px 12px 12px rgb(164, 72, 1);
+  }
+  
+  .grid_of_2{
+    display: grid;
+    justify-content: center;
+    direction: row;
+  }
+  
+  
